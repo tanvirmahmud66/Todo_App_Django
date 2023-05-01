@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'ToDo_Application.wsgi.application'
 #         'ENGINE': 'django.db.backends.postgresql',
 #         'NAME': 'postgres',
 #         'USER': 'tanvirmahmud',
-#         'PASSWORD': '1821131',
+#         'PASSWORD': '',
 #         'HOST': 'localhost',  # Leave empty for localhost
 #         'PORT': '5432',  # Default port is 5432
 #     }
