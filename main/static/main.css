@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+body{
+    background-color: #0a2137;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Todo application main */
+.contents{
+    min-width: 600px;
+    background-color: #05546e ;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+}
+.heading{
+    background-color: #F49F0A ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0;
+    border-radius: 10px;
+}
+
+.main_app{
+    margin-top: 1rem;
+    padding: .5rem 0;
+}
+.input_form{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo{
+    width: 85%;
+    height: 40px;
+    font-size: 1.3rem;
+    color: black;
+    padding: 0 .3rem;
+    border: none;
+    border-radius: 10px;
+}
+.todos{
+    margin-top: .8rem;
+    height: 430px;
+    overflow: scroll;
+}
+.each{
+    height: 35px;
+    background-color: #00A6A6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: .5rem;
+    margin-bottom: 1rem;
+}
+.each_complete{
+    height: 35px;
+    background-color: #e24627;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: .5rem;
+    margin-bottom: 1rem;
+}
+
+.each p{
+    width: 75%;
+}
+.each_complete p{
+    width: 75%;
+    text-decoration: line-through;
+}
+
+.each .icons{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.each_complete .icons{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn{
+    background: none;
+    padding: .4rem 1rem;
+    border: none;
+    background-color: #F49F0A ;
+    font-size: 1.5rem;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+.btn:hover{
+    background-color: #bb7b0c ;
+}

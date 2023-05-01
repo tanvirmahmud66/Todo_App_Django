@@ -1,0 +1,37 @@
+{%extends 'base.html'%}
+{%block heading%}
+    <h1>Todo App</h1>
+{%endblock heading%}
+{%block application%}
+<div class="main_app">
+    <form class="input_form" action="" method="POST">
+        {%csrf_token%}
+        <input type="text" class="todo" name="todo" placeholder="New Todo">
+        <input type="submit" class="btn" value="Add">
+    </form>
+    <div class="todos">
+        {%for todo in todos%}
+            <div class="{%if todo.is_complete%}each_complete{%else%}each{%endif%}">
+                <p>{{todo.todo}}</p>
+                <div class="icons">
+                    <a class="link" href="{%url 'is_complete' todo.id%}">
+                        <span class="material-symbols-outlined">
+                            check_circle
+                        </span>
+                    </a> 
+                    <a class="link" href="{%url 'edit' todo.id%}">
+                        <span class="material-symbols-outlined">
+                            edit_square
+                        </span>
+                    </a>
+                    <a class="link" href="{%url 'delete' todo.id%}">
+                        <span class="material-symbols-outlined">
+                            delete
+                        </span>
+                    </a>
+                </div>
+            </div>
+        {%endfor%}
+    </div>
+</div>              
+{%endblock application%}
